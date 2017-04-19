@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title class="center">
+            Inventario
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="inventory-information-body">
+
+    <div padding>
+        <ion-card *ngFor="let product of products">
+            <ion-card-header>
+                {{product.CODE_SKU + "-" + product.DESCRIPTION_SKU}}
+            </ion-card-header>
+            <ion-card-content>
+                <label>Descripci&oacute;n: {{product.DESCRIPTION_SKU}}</label>
+                <label>Maneja Serie: {{product.HANDLE_SERIAL}}</label>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <ion-fab right bottom>
+        <button ion-fab color="danger"><ion-icon name="add"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-fab color="secondary"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab color="dark"><ion-icon name="logo-googleplus"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
+</ion-content>

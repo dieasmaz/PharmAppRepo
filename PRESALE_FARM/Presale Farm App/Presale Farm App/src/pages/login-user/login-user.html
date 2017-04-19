@@ -1,0 +1,32 @@
+<ion-content padding>
+
+    <div class="img-logo">
+        <img src="../www/assets/images/presalePharmLogo.png" alt="Sonda POS" />
+    </div>
+    <h1 class="center">Presale Pharm APP&reg;</h1>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <ion-item>
+            <ion-label floating primary>Usuario</ion-label>
+            <ion-input [(ngModel)]="userInfo.email"
+                       formControlName="email"
+                       type="text"
+                       id="email"
+                       spellcheck="false"
+                       autocapitalize="off"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating primary>Contrase&ntilde;a</ion-label>
+            <ion-input [(ngModel)]="userInfo.password"
+                       formControlName="password"
+                       type="password"
+                       id="password"
+                       spellcheck="false"
+                       autocapitalize="off"></ion-input>
+        </ion-item>
+
+        <button ion-button color="secondary" block [disabled]="!loginForm.valid">Ingresar</button>
+    </form>
+
+</ion-content>

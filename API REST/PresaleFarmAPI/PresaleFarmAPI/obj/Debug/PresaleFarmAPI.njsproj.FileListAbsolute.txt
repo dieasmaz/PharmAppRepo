@@ -1,0 +1,2 @@
+D:\RECURSOS VARIOS\API REST\PresaleFarmAPI\PresaleFarmAPI\bin\Microsoft.NodejsTools.WebRole.dll
+D:\RECURSOS VARIOS\API REST\PresaleFarmAPI\PresaleFarmAPI\obj\Debug\PresaleFarmAPI.njsprojResolveAssemblyReference.cache

@@ -1,0 +1,29 @@
+page-login-user {
+
+    .img-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 10%;
+    }
+
+    .img-logo > img {
+        height: 80%;
+        width: 80%;
+    }
+
+    .login-body {
+        background: rgba(104,210,237,1);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(104,210,237,1) 0%, rgba(31,123,229,1) 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(104,210,237,1)), color-stop(100%, rgba(31,123,229,1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(104,210,237,1) 0%, rgba(31,123,229,1) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(104,210,237,1) 0%, rgba(31,123,229,1) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(104,210,237,1) 0%, rgba(31,123,229,1) 100%);
+        background: radial-gradient(ellipse at center, rgba(104,210,237,1) 0%, rgba(31,123,229,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68d2ed', endColorstr='#1f7be5', GradientType=1 );
+    }
+
+    .center {
+        text-align: center;
+    }
+}

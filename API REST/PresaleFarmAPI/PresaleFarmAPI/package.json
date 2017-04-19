@@ -1,0 +1,12 @@
+{
+  "name": "presale-farm-api",
+  "version": "0.0.0",
+  "description": "PresaleFarmAPI",
+  "main": "app.js",
+  "author": {
+    "name": "mobility"
+  },
+  "dependencies": {
+    "mssql": "^4.0.0"
+  }
+}
