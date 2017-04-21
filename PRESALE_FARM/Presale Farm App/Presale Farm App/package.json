@@ -1,7 +1,7 @@
 {
   "name": "io.cordova.myappe28da9",
-  "author": "",
-  "homepage": "",
+  "author": "Diego As",
+  "homepage": "http://www.adolfomazariegos.esy.es",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -44,7 +44,9 @@
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": [],
+  "cordovaPlatforms": [
+    "android"
+  ],
   "-vs-binding": {
     "BeforeBuild": [
       "ionic:build"
