@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from "../../pages/home/home";
+import { Events } from 'ionic-angular';
 
 @Component({
     selector: 'page-validate-start-app',
@@ -8,7 +9,9 @@ import { HomePage } from "../../pages/home/home";
 })
 export class ValidateStartAppPage {
     user: any;
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    constructor(public navCtrl: NavController
+    , public navParams: NavParams
+    , private events: Events ) {
         this.user = JSON.parse(this.navParams.get("USER"))[0];
     }
 
@@ -17,11 +20,11 @@ export class ValidateStartAppPage {
     }
 
     goHomePage() {
-        this.navCtrl.push(HomePage, {},
+        this.navCtrl.setRoot(HomePage, {},
             {
                 animate: true, animation: "md-transition", direction: "forward", duration: 1000
             });
-        this.navCtrl.remove(0, 1);
+            this.events.publish("User", this.user);
     }
     goBack() {
         this.navCtrl.pop();

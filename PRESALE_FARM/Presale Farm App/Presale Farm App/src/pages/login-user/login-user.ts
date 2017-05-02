@@ -37,7 +37,7 @@ export class LoginUserPage {
     onSubmit() {
         const loading = this.loadingCtrl.create({
             spinner: "dots"
-            , content: "Iniciando Sesión, por favor, espere..."
+            , content: "Iniciando SesiÃ³n, por favor, espere..."
         });
         loading.present();
 

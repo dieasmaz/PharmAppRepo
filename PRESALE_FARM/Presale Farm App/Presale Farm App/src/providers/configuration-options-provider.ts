@@ -11,7 +11,7 @@ export class ConfigurationOptionsProvider {
     //    product: "http://10.87.110.160:8596/product"
     //};
     url = {
-        loguin: "http://192.168.43.165:8596/loguin",
-        product: "http://192.168.43.165:8596/product"
+        loguin: "http://192.168.1.102:8596/loguin",
+        product: "http://192.168.1.102:8596/product"
     };
 }
