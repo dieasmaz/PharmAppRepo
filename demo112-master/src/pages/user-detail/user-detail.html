@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>UserDetail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="user.picture.large" alt="avatar">
+    <ion-card-header>
+      {{ user.name.title }} {{ user.name.last }}
+    </ion-card-header>
+    <ion-card-content>
+      {{ user.name.email }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
